@@ -1,23 +1,23 @@
 import { useRef } from "react";
 
 function UploadForm({
-    jobdescription,
+    jobDescription,
     onJobDescriptionChange,
     resumeFile,
     onResumeFileChange,
     onSubmit,
     loading,
-}){
+}) {
     const fileInputRef = useRef(null);
 
-    function handleFileChange(event){
+    function handleFileChange(event) {
         const selectedFile = event.target.files?.[0];
 
-        if (!selectedFile){
+        if (!selectedFile) {
             return;
         }
 
-        if (selectedFile.type !== "application/pdf"){
+        if (selectedFile.type !== "application/pdf") {
             alert("Please select a PDF resume");
             event.target.value = "";
             return;
@@ -26,10 +26,10 @@ function UploadForm({
         onResumeFileChange(selectedFile);
     }
 
-    function removeFile(){
+    function removeFile() {
         onResumeFileChange(null);
 
-        if (fileInputRef.current){
+        if (fileInputRef.current) {
             fileInputRef.current.value = "";
         }
     }
@@ -37,16 +37,16 @@ function UploadForm({
     return (
         <form className="upload-form" onSubmit={onSubmit}>
             <div className="form-group">
-                <label htmlFor = "job-description">Job Description</label>
+                <label htmlFor="job-description">Job Description</label>
                 <textarea
-                  id="job-description"
-                  value={jobdescription}
-                  onChange={(event)=> onJobDescriptionChange(event.target.value)}
-                  placeholder="Paste the complete job description here..."
-                  rows="11"
-                  disabled={loading}
-                  required
-                  />
+                    id="job-description"
+                    value={jobDescription}
+                    onChange={(event) => onJobDescriptionChange(event.target.value)}
+                    placeholder="Paste the complete job description here..."
+                    rows="11"
+                    disabled={loading}
+                    required
+                />
             </div>
 
             <div className="form-group">
@@ -61,22 +61,23 @@ function UploadForm({
                 </label>
 
                 <input
-                  ref={fileInputRef}
-                  id="resume"
-                  type="file"
-                  accept=".pdf,application/pdf"
-                  onChange={handleFileChange}
-                  disabled={loading}
-                  required={!resumeFile}
-                  />
+                    ref={fileInputRef}
+                    id="resume"
+                    type="file"
+                    accept=".pdf,application/pdf"
+                    onChange={handleFileChange}
+                    disabled={loading}
+                    required={!resumeFile}
+                />
 
                 {resumeFile && (
                     <div className="selected-file">
                         <span>{resumeFile.name}</span>
-                        <button type ="button" onClick={removeFile} disabled={loading}>Remove</button>
-                
-            </div>
-            )}
+                        <button type="button" onClick={removeFile} disabled={loading}>
+                            Remove
+                        </button>
+                    </div>
+                )}
             </div>
 
             <button className="primary-button" type="submit" disabled={loading}>
@@ -86,4 +87,4 @@ function UploadForm({
     );
 }
 
-export default UploadForm
+export default UploadForm;

@@ -11,12 +11,7 @@ export async function analyzeResume(jobDescription, resumeFile) {
 
   const response = await axios.post(
     `${API_BASE_URL}/api/analyze`,
-    formData,
-    {
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-    }
+    formData
   );
 
   return response.data;
