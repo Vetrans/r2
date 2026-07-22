@@ -58,4 +58,9 @@ Backend :-
    Uvicorn - server
    python-multipart - file upload
    pdfplumber - PDF text extraction
-   
+   scikit -JD vs Resume (Relevance)
+   Pydantic - Data Validation
+   Render - Hosting
+
+Database :- 
+   Not needed
