@@ -23,7 +23,7 @@ INPUT FLOW:-
                     RESUME
     Backend Process:-
     Step 1:-
-       1. Extract text from resume PDF (pdfplumber)
+       1. Extract text from resume PDF
        2. Extract skills
        3. Extract Years of experience
        4. Extract Education
@@ -44,3 +44,18 @@ INPUT FLOW:-
 Why am i Building this:-
     People can understand what and where they are going wrong and where they can improve 
 
+Tech Stack:-
+
+Frontend :-
+   React(Vite) - UI
+   CSS - styling
+   Axios - API calling backend
+   Recharts - match match score
+   Github Pages - Hosting
+
+Backend :- 
+   FastAPI - restapi
+   Uvicorn - server
+   python-multipart - file upload
+   pdfplumber - PDF text extraction
+   
