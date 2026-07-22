@@ -46,6 +46,7 @@ function UploadForm({
                   rows="11"
                   disabled={loading}
                   required
+                  />
             </div>
 
             <div className="form-group">
@@ -71,10 +72,18 @@ function UploadForm({
 
                 {resumeFile && (
                     <div className="selected-file">
-                )
+                        <span>{resumeFile.name}</span>
+                        <button type ="button" onClick={removeFile} disabled={loading}>Remove</button>
                 
-                }
             </div>
+            )}
+            </div>
+
+            <button className="primary-button" type="submit" disabled={loading}>
+                {loading ? "Analyzing..." : "Analyze My Resume"}
+            </button>
         </form>
-    )
+    );
 }
+
+export default UploadForm
