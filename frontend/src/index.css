@@ -1,8 +1,7 @@
 :root{
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color:
-   ;
-  background: ;
+  color:#202137;
+  background:#f7f7fb ;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -18,7 +17,7 @@ html {
 body{
   margin: 0;
   min-width: 320px;
-  background: ;
+  background:#f7f7fb ;
 }
 
 button,textarea,input{
