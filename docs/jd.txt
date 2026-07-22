@@ -1,0 +1,127 @@
+AI/ML Intern – Job Description
+Position
+
+AI/ML Intern
+
+Location
+
+Remote / Hybrid / On-site
+
+Duration
+
+3–6 Months (Internship)
+
+Stipend
+
+₹10,000–₹30,000/month (Depending on skills and performance)
+
+About the Role
+
+We are looking for a motivated AI/ML Intern who is passionate about Artificial Intelligence, Machine Learning, and Data Science. You will work alongside experienced engineers to build, train, evaluate, and deploy machine learning models while contributing to real-world AI-powered applications.
+
+This internship is ideal for students or recent graduates looking to gain practical industry experience in AI and machine learning.
+
+Responsibilities
+Collect, clean, and preprocess structured and unstructured datasets.
+Build and train machine learning and deep learning models.
+Analyze datasets to identify trends and insights.
+Implement data preprocessing and feature engineering pipelines.
+Evaluate model performance using appropriate metrics.
+Deploy ML models using APIs or cloud platforms.
+Assist in developing AI-powered applications and automation tools.
+Optimize model performance and inference speed.
+Research new AI techniques and present findings to the team.
+Write clean, maintainable, and well-documented code.
+Collaborate with software engineers, product managers, and designers.
+Required Skills
+Programming
+Python
+SQL
+Machine Learning
+Supervised Learning
+Unsupervised Learning
+Model Evaluation
+Feature Engineering
+Data Preprocessing
+Libraries & Frameworks
+NumPy
+Pandas
+Scikit-learn
+Matplotlib
+TensorFlow or PyTorch
+Data Skills
+Data Cleaning
+Exploratory Data Analysis (EDA)
+Data Visualization
+Development Tools
+Git & GitHub
+Jupyter Notebook
+VS Code
+Preferred Skills
+Deep Learning
+NLP (Natural Language Processing)
+Computer Vision
+Generative AI & LLMs
+LangChain or LlamaIndex
+Hugging Face Transformers
+FastAPI or Flask
+Docker
+Basic Linux
+Cloud Platforms (AWS, Azure, or GCP)
+MLflow or Weights & Biases
+Qualifications
+Pursuing or recently completed a Bachelor's degree in Computer Science, Information Technology, Artificial Intelligence, Data Science, or a related field.
+Strong problem-solving and analytical skills.
+Good understanding of statistics and linear algebra.
+Excellent communication and teamwork skills.
+Nice-to-Have Projects
+Chatbot using LLMs
+Recommendation System
+Image Classification Model
+Sentiment Analysis
+Time Series Forecasting
+Object Detection
+Fraud Detection
+OCR Application
+Resume Screening System
+AI Automation Tool
+Learning Opportunities
+
+During the internship, you'll gain hands-on experience with:
+
+Building production-ready ML pipelines
+Model deployment and monitoring
+REST API development
+Cloud deployment
+Experiment tracking
+MLOps fundamentals
+Working in Agile development teams
+Real-world AI product development
+Success Metrics
+
+By the end of the internship, you should be able to:
+
+Build end-to-end machine learning pipelines.
+Deploy trained models as APIs.
+Improve model accuracy through experimentation.
+Write production-quality Python code.
+Work effectively using Git and collaborative development workflows.
+Communicate technical findings to both technical and non-technical stakeholders.
+What We Offer
+Mentorship from experienced AI engineers.
+Hands-on work on real AI projects.
+Flexible working hours.
+Internship certificate.
+Letter of Recommendation (based on performance).
+Opportunity for a full-time offer after successful completion.
+Access to learning resources and technical workshops.
+Example Tech Stack
+Languages: Python, SQL
+ML Libraries: Scikit-learn, TensorFlow, PyTorch
+Data: NumPy, Pandas, Matplotlib
+Backend: FastAPI, Flask
+Database: PostgreSQL, MongoDB
+Version Control: Git, GitHub
+Deployment: Docker, AWS, GCP, Azure
+Experiment Tracking: MLflow, Weights & Biases
+LLMs: OpenAI API, Hugging Face, LangChain, LlamaIndex
