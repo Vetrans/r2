@@ -187,5 +187,58 @@ input[type="file"] {
   align-items: center;
   margin-top: 12px;
   padding:11px 13px;
-  
+  border-radius:9px;
+  background: #f0fff7;
+  color #22764d;
+}
+
+.selected-file button{
+  border: 0;
+  background: transparent;
+  color: #a33145;
+  font-weight: 700;
+}
+
+.primary-button,
+.secondary-button{
+  border: 0;
+  border-radius: 10px;
+  padding: 13px 20px;
+  font-weight: 800;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.primary-button,
+.secondary-button{
+  border: 0;
+  border-radius: 10px;
+  padding: 13px 20px;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.primary-button{
+  width: 100%;
+  background:#5b5ce2
+  color: white;
+}
+
+.primary-button:hover,
+.secondary-button:hover{
+  transform: translateY(-1px);
+}
+
+.primary-button:disabled{
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.secondary-button{
+  border: 1px solid #c8c9e4;
+  background: white;
+  color: #45466b;
+}
+
+.loader-container{
+  padding: 62px 24px;
+  text-align: center;
 }
