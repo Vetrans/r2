@@ -64,8 +64,8 @@ function App() {
     <main>
       <section className="hero">
         <div className="hero-content">
-          <span className="brand">ClearCall</span>
-          <h1>Know why your application may be rejected.</h1>
+          <span className="brand">ClearCall — Case File</span>
+          <h1>Know why your application may be <em>rejected.</em></h1>
 
           <p>
             Compare your resume against a job description and get a clear,

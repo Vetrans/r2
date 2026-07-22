@@ -1,7 +1,22 @@
 import { Cell, Pie, PieChart, ResponsiveContainer } from "recharts";
 
+const TONE_COLORS = {
+    "stamp-strong": "#2E6E49",
+    "stamp-moderate": "#B8801F",
+    "stamp-partial": "#C2790E",
+    "stamp-low": "#B23A2E",
+};
+
+function getStampTone(score) {
+    if (score >= 80) return "stamp-strong";
+    if (score >= 60) return "stamp-moderate";
+    if (score >= 40) return "stamp-partial";
+    return "stamp-low";
+}
+
 function MatchScoreGauge({ score, verdict, scoreBreakdown }) {
     const remainingScore = Math.max(0, 100 - score);
+    const stampTone = getStampTone(score);
 
     const gaugeData = [
         { name: "Match score", value: score },
@@ -18,6 +33,9 @@ function MatchScoreGauge({ score, verdict, scoreBreakdown }) {
     return (
         <section className="result-card score-card">
             <div>
+                <div className={`verdict-stamp ${stampTone}`}>
+                    <span>{verdict}</span>
+                </div>
                 <p className="eyebrow"> Overall Application </p>
                 <h2>{verdict}</h2>
                 <p className="muted-text">
@@ -39,8 +57,8 @@ function MatchScoreGauge({ score, verdict, scoreBreakdown }) {
                             endAngle={-270}
                             stroke="none"
                         >
-                            <Cell fill="#5b5ce2" />
-                            <Cell fill="#e8e9f3" />
+                            <Cell fill={TONE_COLORS[stampTone]} />
+                            <Cell fill="#E4E6EC" />
                         </Pie>
                     </PieChart>
                 </ResponsiveContainer>

@@ -37,7 +37,10 @@ function UploadForm({
     return (
         <form className="upload-form" onSubmit={onSubmit}>
             <div className="form-group">
-                <label htmlFor="job-description">Job Description</label>
+                <label htmlFor="job-description">
+                    <span className="field-tag">01</span>
+                    Job Description
+                </label>
                 <textarea
                     id="job-description"
                     value={jobDescription}
@@ -50,7 +53,10 @@ function UploadForm({
             </div>
 
             <div className="form-group">
-                <label htmlFor="resume"> Resume PDF </label>
+                <label htmlFor="resume">
+                    <span className="field-tag">02</span>
+                    Resume PDF
+                </label>
 
                 <label className="file-upload" htmlFor="resume">
                     <span className="upload-icon">↑</span>
