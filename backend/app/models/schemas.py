@@ -19,4 +19,18 @@ class ScoreBreakdown(BaseModel):
     education_score: float
 
 class AnalysisResponse(BaseModel):
-    match_score
+    match_score: float
+    verdict: str
+    score_breakdown: ScoreBreakdown
+
+    matched_skills: List[str] = Field(default_factory=list)
+    missing_skills: List[str] = Field(default_factory=list)
+
+    experience: ExperienceDetails
+    education: EducationDetails
+
+    rejection_reasons: List[str] = Field(default_factory=list)
+    resume_fixes: List[str] = Field(default_factory=list)
+    upskilling_suggestions: List[str] = Field(default_factory=list)
+
+    resume_text_preview: str
