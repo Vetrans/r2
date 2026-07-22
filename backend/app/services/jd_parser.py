@@ -5,7 +5,7 @@ from typing import List, Optional
 
 SKILLS_FILE = Path(__file__).resolve().parent.parent / "data" / "skills_list.json"
 
-EDUCATION PATTERNS = {
+EDUCATION_PATTERNS = {
     "phd" : [r"\bhp\.?d\.b", r"\bdoctorate\b", r"\bdoctorate\b"],
     "master's degree": [
         r"\bmasters'?s\b",
@@ -46,8 +46,11 @@ def extract_skills(text: str) -> List[str]:
 def extract_required_experienced(text: str) -> Optional[float]:
     normalized_text = text.lower()
 
-    patterns = [
-
+    *patterns = [
+        r"()",
+        r"minimum\s+of\s+(\d+(?))",
+        r"",
+        r"",
     ]
 
     matches = []
@@ -61,3 +64,17 @@ def extract_required_experienced(text: str) -> Optional[float]:
     return max(matches) if matches else None
 
 def extract_education(text: str) -> List[str]:
+    normalized_text = text.lower()
+    education = []
+
+    for qualification, patterns in EDUCATION_PATTERNS.items():
+        if any(re.search(pattern, normalized_text) for pattern in patterns):
+            education.append(qualification)
+    return education
+
+def parse_job_description(jd_text: str) -> dict:
+    return{
+        "skills": extract_skills(jd_text),
+        "required_experience_years": extract_required_experienced(jd_text),
+        "required_education": extract_education(jd_text),
+    }
