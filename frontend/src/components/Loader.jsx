@@ -5,9 +5,8 @@ function Loader(){
                         <h2>ClearCall is Analyzing your application</h2>
                         <p>
                             Comparing your resume against the role requirements and building an explainable action plan.
-                         </p>
+                        </p>
                     </div>
-                </div>
             );
 }
 

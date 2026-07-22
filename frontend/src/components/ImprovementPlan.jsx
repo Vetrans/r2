@@ -9,7 +9,7 @@ function ImprovementPlan({ resumeFixes, upskillingSuggestions }) {
                     <h3>Resume fixes</h3>
                     <ul>
                         {resumeFixes.map((fix) => (
-                            <li key={fix}">{fix}</li>
+                            <li key={fix}>{fix}</li>
                         )
                             )}
                     </ul>
