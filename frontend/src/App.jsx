@@ -38,8 +38,6 @@ function App() {
         resumeFile
       );
 
-      console.log("Backend Response:", analysisResults);
-
       setResults(analysisResults);
     } catch (requestError) {
       const message =
@@ -121,11 +119,6 @@ function App() {
                 Analyze Another Resume
               </button>
             </div>
-
-            {/* Debug - Remove after testing */}
-            <pre style={{ whiteSpace: "pre-wrap" }}>
-              {JSON.stringify(results, null, 2)}
-            </pre>
 
             <div className="results-stack">
               <MatchScoreGauge
