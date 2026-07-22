@@ -1,5 +1,5 @@
-from fastapi import FASTAPI
-from fastapi.middleware.cors import CORSMiddleware
+from FastApi import FASTAPI
+from FastApi.middleware.cors import CORSMiddleware
 from app.config import ALLOWED_ORIGINS
 from app.routes.analyze import router as analyze_router
 

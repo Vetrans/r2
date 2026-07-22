@@ -378,6 +378,123 @@ requirements-grid{
   gap: 8px;
 }
 
-.chip{
-  
+.chip {
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 650;
 }
+
+.matched-chip {
+  background: #e6f8ef;
+  color: #177548;
+}
+
+.missing-chip {
+  background: #ffedef;
+  color: #a93147;
+}
+
+.empty-message {
+  color: #78798d;
+  line-height: 1.5;
+}
+
+.requirements-grid {
+  margin-top: 28px;
+}
+
+.requirement-box {
+  padding: 18px;
+  border-radius: 12px;
+  background: #f8f8fc;
+}
+
+.requirement-box span,
+.requirement-box strong,
+.requirement-box p {
+  display: block;
+}
+
+.requirement-box span {
+  color: #6f7084;
+  font-size: 0.83rem;
+  font-weight: 700;
+}
+
+.requirement-box strong {
+  margin: 7px 0;
+  color: #34355d;
+}
+
+.requirement-box p {
+  margin: 0;
+  color: #646579;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.rejection-card {
+  border-top: 4px solid #e56a80;
+}
+
+.reason-list {
+  display: grid;
+  gap: 15px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reason-list li {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+}
+
+.reason-list p {
+  margin: 3px 0 0;
+  color: #55566b;
+  line-height: 1.55;
+}
+
+.reason-number {
+  display: grid;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 50%;
+  background: #ffe6eb;
+  color: #ab2c45;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.plan-column {
+  padding: 20px;
+  border-radius: 12px;
+  background: #f8f8fc;
+}
+
+.plan-column h3 {
+  margin: 0 0 14px;
+}
+
+.plan-column ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 19px;
+  color: #55566a;
+  line-height: 1.55;
+}
+
+footer {
+  padding: 25px;
+  background: #1c1c3b;
+  color: #c9cae4;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
